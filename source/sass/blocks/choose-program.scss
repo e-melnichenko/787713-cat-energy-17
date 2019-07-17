@@ -1,0 +1,31 @@
+.choose-program {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 30px;
+
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.choose-program__wrapper {
+  @include container;
+}
+
+.choose-program__title {
+  display: block;
+  margin-bottom: 25px;
+
+  @include oswReg(36px, 36px, $white);
+  text-align: center;
+}
+
+.choose-program__slogan {
+  display: block;
+  margin-bottom: 30px;
+
+  @include oswReg(14px, 14px, $white);
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -1,0 +1,5 @@
+.page-header {
+  @include container;
+  background-color: $white;
+  outline: 2px solid blue;
+}

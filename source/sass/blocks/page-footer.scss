@@ -1,0 +1,78 @@
+.page-footer {
+  background-color: #f2f2f2;
+}
+
+.page-footer__wrapper {
+  outline: 2px solid $green;
+  @include container;
+  padding-top: 40px;
+
+}
+
+.page-footer__logo {
+  display: block;
+  width: 128px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.page-footer__wrapper-social {
+  padding: 20px 0;
+  border-top: 1px solid rgba(#666666, 0.1%);
+  border-bottom: 1px solid rgba(#666666, 0.1%);
+}
+
+
+.social-buttons {
+  @include resetList;
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  margin: 0 auto;
+}
+
+.social-buttons__item {
+  position: relative;
+}
+
+.social-buttons__item a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.social-buttons__item--vk a {
+  background-image: url("../../img/icon-vk.svg");
+  background-size: 22px 12px;
+}
+
+.social-buttons__item--insta a {
+  background-image: url("../../img/icon-insta.svg");
+  background-size: 16px 16px;
+}
+
+.social-buttons__item--fb a {
+  background-image: url("../../img/icon-fb.svg");
+  background-size: 10px 19px;
+}
+
+.page-footer__wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 22px 0;
+}
+
+.page-footer__copyright-name {
+  display: block;
+  text-decoration: none;
+  @include arialReg(16px, 16px, $grey);
+}
+
+.link {
+  outline: 2px solid red;
+  display: block;
+}
