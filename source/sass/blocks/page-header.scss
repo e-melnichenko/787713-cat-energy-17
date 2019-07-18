@@ -1,5 +1,13 @@
 .page-header {
-  @include container;
-  background-color: $white;
-  outline: 2px solid blue;
+  position: relative;
+  width: 100%;
+  padding-top: 10px;
 }
+
+.page-header__logo {
+  display: block;
+  // @include container;
+  width: 60%;
+  padding-left: 20px;
+}
+

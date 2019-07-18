@@ -3,7 +3,6 @@
 }
 
 .page-footer__wrapper {
-  outline: 2px solid $green;
   @include container;
   padding-top: 40px;
 
@@ -70,9 +69,4 @@
   display: block;
   text-decoration: none;
   @include arialReg(16px, 16px, $grey);
-}
-
-.link {
-  outline: 2px solid red;
-  display: block;
 }
