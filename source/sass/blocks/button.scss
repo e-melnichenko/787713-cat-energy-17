@@ -43,4 +43,9 @@
       background-image: url("../../img/icon-right-arrow-long.svg");
     }
   }
+
+  &--grey {
+    color: $grey;
+    background-color: #f2f2f2;
+  }
 }
