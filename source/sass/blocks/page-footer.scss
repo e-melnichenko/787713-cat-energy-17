@@ -5,7 +5,6 @@
 .page-footer__wrapper {
   @include container;
   padding-top: 40px;
-
 }
 
 .page-footer__logo {
@@ -67,6 +66,7 @@
 
 .page-footer__copyright-name {
   display: block;
-  text-decoration: none;
+
   @include arialReg(16px, 16px, $grey);
+  text-decoration: none;
 }
