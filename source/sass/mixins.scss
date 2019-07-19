@@ -1,0 +1,45 @@
+@mixin oswReg($font-size, $line-height, $color) {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  color: $color;
+}
+
+@mixin oswMed($font-size, $line-height, $color) {
+  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 500;
+  color: $color;
+}
+
+@mixin container {
+  width: calc(100% - 20px * 2);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin resetList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin imgSafe {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin  pseudo {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+@mixin arialReg($font-size, $line-height, $color) {
+  font-family: "Arial", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}

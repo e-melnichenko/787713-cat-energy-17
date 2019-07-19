@@ -1,0 +1,51 @@
+.advantages {
+  @include container;
+}
+
+.advantages__title {
+  @include oswReg(30px, 60px, $black);
+  margin-bottom: 30px;
+}
+
+.advantages__list {
+  @include resetList;
+}
+
+.advantages__item {
+  display: inline-block;
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
+  padding-left: 80px;
+  vertical-align: bottom;
+
+  @include arialReg(14px, 18px, $grey);
+
+  &::after {
+    @include pseudo;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $green;
+    background-position: 50% 50%;
+  }
+
+  &--health::after {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--powder::after {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--meal::after {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--time::after {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}

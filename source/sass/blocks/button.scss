@@ -1,0 +1,51 @@
+.button {
+  position: relative;
+
+  display: inline-block;
+  width: calc(100% - 20px * 2);
+  padding: 10px 20px;
+
+  @include oswReg(16px, 20px, $white);
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $green;
+  background-repeat: no-repeat;
+  border: none;
+
+  cursor: pointer;
+
+  &--small-text {
+    padding: 11px 20px;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &--catalog {
+    padding: 21px 0;
+
+    @include oswReg(16px, 16px, $black);
+    text-align: left;
+
+    background-color: transparent;
+    border-top: 1px solid #d9d9d9;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-left: 20px;
+
+      width: 24px;
+      height: 11px;
+      background-image: url("../img/icon-right-arrow-long.svg");
+    }
+  }
+
+  &--grey {
+    color: $grey;
+    background-color: #f2f2f2;
+  }
+}
