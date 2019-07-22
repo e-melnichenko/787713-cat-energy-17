@@ -10,7 +10,7 @@
 .site-list__item a {
   display: block;
 
-  @include oswMed(20px, 20px, $black);
+  @include oswMed(20px, 20px);
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;

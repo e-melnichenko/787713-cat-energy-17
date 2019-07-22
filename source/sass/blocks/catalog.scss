@@ -22,10 +22,11 @@
   padding: 0;
   padding-left: 80px;
 
-  @include oswReg(24px, 37px, $black);
+  @include oswReg(24px, 37px);
 
   &::before {
-    @include pseudo;
+    content: "";
+    position: absolute;
     left: 0;
     top: 0;
 
@@ -38,7 +39,8 @@
 
   &--slim {
     &::after {
-      @include pseudo;
+      content: "";
+      position: absolute;
       left: 0;
       top: 0;
 
@@ -51,7 +53,8 @@
 
   &--pro {
     &::after {
-      @include pseudo;
+      content: "";
+      position: absolute;
       left: 0;
       top: 0;
 
@@ -64,7 +67,7 @@
 }
 
 .catalog__description {
-  @include arialReg(14px, 18px, $grey);
+  @include arialReg;
 }
 
 .catalog__button {

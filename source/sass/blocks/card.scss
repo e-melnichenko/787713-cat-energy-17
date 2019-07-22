@@ -26,14 +26,14 @@
   margin: 20px 0;
   padding-right: 60px;
 
-  @include oswReg(16px, 20px, $black);
+  @include oswReg(16px, 20px);
   text-transform: uppercase;
 }
 
 .card__description {
   width: 100%;
 
-  @include arialReg(12px, 16px, $grey);
+  @include arialReg(12px, 16px);
 }
 
 .card__prop {
@@ -58,7 +58,8 @@
   text-align: center;
 
   &::after {
-    @include pseudo;
+    content: "";
+    position: absolute;
     left: calc(50% - 30px / 2);
     top: calc(80px / 2 - 30px / 2);
     width: 30px;
@@ -72,14 +73,14 @@
 .card__show-more b {
   margin-bottom: 5px;
 
-  @include oswReg(16px, 20px, $black);
+  @include oswReg(16px, 20px);
   text-transform: uppercase;
 }
 
 .card__show-more p {
   margin-bottom: 10px;
 
-  @include arialReg(12px, 16px, $grey);
+  @include arialReg(12px, 16px);
 }
 
 .card__show-all {
