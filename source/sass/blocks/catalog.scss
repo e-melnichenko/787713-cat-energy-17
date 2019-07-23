@@ -1,5 +1,7 @@
 .catalog {
-  @include container;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .catalog__list {

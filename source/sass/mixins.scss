@@ -26,11 +26,6 @@
   list-style: none;
 }
 
-@mixin imgSafe {
-  max-width: 100%;
-  height: auto;
-}
-
 @mixin arialReg($font-size: 14px, $line-height: 18px, $color: $grey) {
   font-family: "Arial", sans-serif;
   font-size: $font-size;

@@ -15,3 +15,29 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    padding: 0;
+
+    border: none;
+
+    &--active {
+      border-bottom: 2px solid $green;
+    }
+  }
+
+  .site-list__item a {
+    @include oswReg(18px, 25px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--active {
+    border-color: $white;
+  }
+
+  .site-list__item a {
+    @include oswReg(20px, 25px, $white);
+  }
+}

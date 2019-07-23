@@ -1,5 +1,6 @@
 .choose-program {
-  width: 100%;
+  position: relative;
+  width: 320px;
   margin: 0 auto;
   margin-bottom: 20px;
   padding-top: 30px;
@@ -8,15 +9,13 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100%;
+  outline: 2px solid gold;
 }
 
 .choose-program__wrapper {
-  @include container;
-}
-
-.choose-program__image {
-  display: block;
+  width: 280px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .choose-program__title {
@@ -34,4 +33,76 @@
   @include oswReg(14px, 14px, $white);
   text-transform: uppercase;
   text-align: center;
+}
+
+.choose-program__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.choose-program__button {
+  margin-bottom: 30px;
+}
+@media (min-width: $tablet-width) {
+  .choose-program {
+    width: 708px;
+    padding: 0 30px;
+
+    background-image: none;
+  }
+
+  .choose-program__wrapper {
+    width: 430px;
+    margin-left: 90px;
+  }
+
+  .choose-program__title {
+    @include oswReg(60px, 60px);
+    text-align: left;
+  }
+
+  .choose-program__slogan {
+    margin-bottom: 40px;
+
+    @include oswReg(20px, 20px);
+    text-align-last: left;
+  }
+
+  .choose-program__button {
+    width: 245px;
+    margin-bottom: 600px;
+  }
+
+  .choose-program__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 708px;
+    margin: 0 30px;
+    margin-top: 210px;
+    height: 609px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choose-program {
+    width: 1220px;
+    padding: 0 40px;
+  }
+
+  .choose-program__wrapper {
+    margin-left: 124px;
+  }
+
+  .choose-program__image {
+    margin-top: -60px;
+    margin-left: 600px;
+    width: 552px;
+    height: 499px;
+  }
+
+  .choose-program__button {
+    margin-bottom: 200px;
+  }
 }
