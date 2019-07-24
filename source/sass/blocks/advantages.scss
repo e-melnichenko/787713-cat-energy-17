@@ -76,6 +76,7 @@
     flex-wrap: wrap;
     width: 708px;
   }
+
   .advantages__item {
     width: 245px;
     min-height: 161px;
@@ -111,7 +112,7 @@
     }
 
     &--powder::after {
-      content:"2";
+      content: "2";
     }
 
     &--meal::after {
@@ -122,7 +123,6 @@
       content: "4";
     }
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -139,5 +139,4 @@
   .advantages__item {
     margin-right: 0;
   }
-
 }

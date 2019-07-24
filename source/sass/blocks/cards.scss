@@ -1,13 +1,54 @@
-.cards__title {
-  @include container;
-  display: block;
-  padding-bottom: 20px;
+.cards {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
   padding-top: 20px;
+  outline: 2px solid gold;
+}
 
+.cards__title {
   @include oswReg(36px, 60px);
+  text-align: center;
   border-bottom: 1px solid #e6e6e6;
 }
 
 .cards__list {
   @include resetList;
+}
+
+@media (min-width: $tablet-width) {
+  .cards {
+    width: 708px;
+    padding: 0 30px;
+    padding-top: 30px;
+  }
+
+  .cards__title {
+    @include oswReg(60px, 60px);
+    text-align: left;
+    border: none;
+  }
+
+  .cards__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cards {
+    width: 1220px;
+    padding: 0 40px;
+    padding-top: 30px;
+  }
+
+
+  .cards__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1220px;
+  }
 }
