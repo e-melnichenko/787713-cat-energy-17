@@ -27,7 +27,7 @@
   &--catalog {
     padding: 21px 0;
 
-    @include oswReg(16px, 16px, $black);
+    @include oswReg(16px, 16px);
     text-align: left;
 
     background-color: transparent;
@@ -47,5 +47,11 @@
   &--grey {
     color: $grey;
     background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button--catalog {
+    border: none;
   }
 }

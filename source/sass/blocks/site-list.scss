@@ -7,11 +7,45 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
-.site-list__item a {
+.site-list__link {
   display: block;
 
+  @include oswMed(20px, 20px);
   text-decoration: none;
-  @include oswMed(20px, 20px, $black);
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    padding: 0;
+
+    border: none;
+
+    &--active {
+      border-bottom: 2px solid $green;
+    }
+  }
+
+  .site-list__link {
+    @include oswReg(18px, 25px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    @include oswReg(20px, 25px);
+  }
+
+  .page-header--index .site-list__link {
+    color: $white;
+  }
+
+  // .site-list__item--active {
+  //   border-color: $green;
+  // }
+
+  .page-header--index .site-list__item--active {
+    border-color: $white;
+  }
 }

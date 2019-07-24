@@ -1,9 +1,13 @@
 .advantages {
-  @include container;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  outline: 2px solid gold;
 }
 
 .advantages__title {
-  @include oswReg(30px, 60px, $black);
+  @include oswReg(30px, 60px);
   margin-bottom: 30px;
 }
 
@@ -19,10 +23,11 @@
   padding-left: 80px;
   vertical-align: bottom;
 
-  @include arialReg(14px, 18px, $grey);
+  @include arialReg;
 
-  &::after {
-    @include pseudo;
+  &::before {
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
 
@@ -31,21 +36,107 @@
 
     background-color: $green;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
   }
 
-  &--health::after {
+  &--health::before {
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
-  &--powder::after {
+  &--powder::before {
     background-image: url("../img/advantage-powder@1x.png");
   }
 
-  &--meal::after {
+  &--meal::before {
     background-image: url("../img/advantage-dining@1x.png");
   }
 
-  &--time::after {
+  &--time::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 708px;
+    padding: 0 30px;
+
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .advantages__title {
+    margin-bottom: 70px;
+
+    font-size: 60px;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 708px;
+  }
+
+  .advantages__item {
+    width: 245px;
+    min-height: 161px;
+    margin: 0;
+    margin-right: 80px;
+    padding: 0;
+    padding-top: 120px;
+    // padding-right: 100px;
+
+    font-size: 16px;
+    line-height: 24px;
+    outline: 2px solid blue;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      margin-top: -40px;
+      // margin-left: 150px;
+      z-index: -10;
+
+      @include oswReg(281px, 281px, #f2f2f2);
+    }
+
+    &--health::after {
+      content: "1";
+    }
+
+    &--powder::after {
+      content: "2";
+    }
+
+    &--meal::after {
+      content: "3";
+    }
+
+    &--time::after {
+      content: "4";
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1220px;
+    padding: 0 40px;
+  }
+
+  .advantages__list {
+    width: 1220px;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    margin-right: 0;
   }
 }

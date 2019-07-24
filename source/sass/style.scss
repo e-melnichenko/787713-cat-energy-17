@@ -1,7 +1,8 @@
-@import "./normalize.scss";
 @import "./fonts.scss";
 @import "./variables.scss";
 @import "./mixins.scss";
+@import "./blocks/scaffolding.scss";
+// @import "./blocks/body-index.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/main-nav.scss";
@@ -13,3 +14,4 @@
 @import "./blocks/page-footer.scss";
 @import "./blocks/cards.scss";
 @import "./blocks/card.scss";
+@import "./blocks/social-buttons.scss";
