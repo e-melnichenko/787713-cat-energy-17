@@ -3,8 +3,12 @@
 }
 
 .page-footer__wrapper {
-  @include container;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
   padding-top: 40px;
+
+  outline: 2px solid gold;
 }
 
 .page-footer__logo {
@@ -33,4 +37,47 @@
 
   @include arialReg(16px, 16px);
   text-decoration: none;
+}
+
+.page-footer__copyright-logo {
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-image: url("../img/htmlacademy.svg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+    min-height: 150px;
+    padding: 0 30px;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+  }
+
+  .page-footer__wrapper-social {
+    width: 130px;
+
+    border: none;
+  }
+
+  .page-footer__wrapper-bottom {
+    width: 162px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: 1220px;
+    padding: 0 40px;
+
+  }
 }
