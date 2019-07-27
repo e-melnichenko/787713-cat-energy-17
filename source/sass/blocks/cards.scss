@@ -1,15 +1,15 @@
 .cards {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
-  padding-top: 20px;
-  outline: 2px solid gold;
 }
 
 .cards__title {
+  margin: 0;
+  padding: 18px 20px;
+  padding-bottom: 28px;
   @include oswReg(36px, 60px);
-  text-align: center;
-  border-bottom: 1px solid #e6e6e6;
+
+  border-bottom:  1px solid #e6e6e6;
 }
 
 .cards__list {
@@ -20,10 +20,11 @@
   .cards {
     width: 708px;
     padding: 0 30px;
-    padding-top: 30px;
+    // padding-top: 30px;
   }
 
   .cards__title {
+    padding: 30px 0;
     @include oswReg(60px, 60px);
     text-align: left;
     border: none;
@@ -41,7 +42,7 @@
   .cards {
     width: 1220px;
     padding: 0 40px;
-    padding-top: 30px;
+    // padding-top: 30px;
   }
 
 
@@ -50,5 +51,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 1220px;
+  }
+
+  .cards__title {
+    padding: 20px 0;
   }
 }

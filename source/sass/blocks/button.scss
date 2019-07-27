@@ -53,13 +53,18 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    font-size: 20px;
-    width: 205px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    &--small-text {
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 
   .button--catalog {
+    font-size: 20px;
+    line-height: 20px;
     border: none;
 
     &::after {
