@@ -10,24 +10,43 @@
 .social-buttons__item a {
   display: block;
   background-repeat: no-repeat;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social-buttons__item--vk a {
   width: 22px;
   height: 12px;
   background-image: url("../img/icon-vk.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-vk-green.svg");
+  }
 }
 
 .social-buttons__item--insta a {
   width: 16px;
   height: 16px;
   background-image: url("../img/icon-insta.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-insta-green.svg");
+  }
 }
 
 .social-buttons__item--fb a {
   width: 10px;
   height: 19px;
   background-image: url("../img/icon-fb.svg");
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/icon-fb-green.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {

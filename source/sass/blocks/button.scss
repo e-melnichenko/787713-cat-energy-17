@@ -17,6 +17,15 @@
 
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($white, 0.3%);
+  }
+
   &--small-text {
     padding: 11px 20px;
 
@@ -42,6 +51,7 @@
       width: 24px;
       height: 11px;
       background-image: url("../img/icon-right-arrow-long.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -49,6 +59,32 @@
     color: $grey;
     background-color: #f2f2f2;
   }
+}
+
+.button--catalog:hover,
+.button--catalog:focus {
+  background-color: transparent;
+
+  &::after {
+    width: 33px;
+    height: 11px;
+
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+}
+
+.button--catalog:active {
+  color: $black;
+  opacity: 0.3;
+}
+
+.button--grey:hover,
+.button--grey:focus {
+  background-color: #ebebeb;
+}
+
+.button--grey:active {
+  color: rgba($black, 0.3%);
 }
 
 @media (min-width: $tablet-width) {
