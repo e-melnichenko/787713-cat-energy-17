@@ -16,6 +16,15 @@
   width: 128px;
   margin: 0 auto;
   margin-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__wrapper-social {
@@ -37,6 +46,10 @@
 
   @include arialReg(16px, 16px);
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright-logo {
@@ -46,6 +59,15 @@
   background-image: url("../img/htmlacademy.svg");
   background-position: 50% 50%;
   background-size: cover;
+
+  &:hover,
+  &:focus {
+    background-image: url("../img/htmlacademy-green.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

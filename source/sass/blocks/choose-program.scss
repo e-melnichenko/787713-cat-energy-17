@@ -2,14 +2,21 @@
   position: relative;
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 20px;
-  padding-top: 30px;
 
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 100%;
-  outline: 2px solid gold;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 305px;
+    z-index: -10;
+
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .choose-program__wrapper {
@@ -20,7 +27,8 @@
 
 .choose-program__title {
   display: block;
-  margin-bottom: 25px;
+  padding-top: 28px;
+  padding-bottom: 25px;
 
   @include oswReg(36px, 36px, $white);
   text-align: center;
@@ -28,6 +36,7 @@
 
 .choose-program__slogan {
   display: block;
+  margin: 0;
   margin-bottom: 30px;
 
   @include oswReg(14px, 14px, $white);
@@ -37,74 +46,96 @@
 
 .choose-program__image {
   display: block;
-  margin: 0 auto;
 }
 
 .choose-program__button {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .choose-program {
+    position: relative;
     width: 708px;
+    min-height: 845px;
     padding: 0 30px;
 
-    background-image: none;
+    &::before {
+      display: none;
+    }
   }
 
   .choose-program__wrapper {
+    position: relative;
     width: 430px;
+    padding: 0;
+    margin: 0;
     margin-left: 90px;
   }
 
   .choose-program__title {
+    padding: 32px 0;
+    margin-bottom: 10px;
+
     @include oswReg(60px, 60px);
     text-align: left;
   }
 
   .choose-program__slogan {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 
     @include oswReg(20px, 20px);
-    text-align-last: left;
+    text-align: left;
   }
 
   .choose-program__button {
-    width: 245px;
-    margin-bottom: 600px;
+    width: 205px;
   }
 
   .choose-program__image {
     position: absolute;
-    top: 0;
-    left: 0;
-
+    top: 220px;
+    left: 30px;
     width: 708px;
-    margin: 0 30px;
-    margin-top: 210px;
     height: 609px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .choose-program {
+    position: static;
     width: 1220px;
+    min-height: 529px;
     padding: 0 40px;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
+
+    &::before {
+      display: block;
+      width: 50%;
+      height: 696px;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
   }
 
   .choose-program__wrapper {
-    margin-left: 124px;
+    width: 420px;
+    margin-left: 80px;
+    padding-top: 20px;
+  }
+
+  .choose-program__title {
+    padding: 30px 0;
+    margin-bottom: 15px;
+  }
+
+  .choose-program__slogan {
+    margin-bottom: 50px;
   }
 
   .choose-program__image {
-    margin-top: -60px;
-    margin-left: 600px;
+    top: -50px;
+    left: 450px;
     width: 552px;
     height: 499px;
-  }
-
-  .choose-program__button {
-    margin-bottom: 200px;
   }
 }

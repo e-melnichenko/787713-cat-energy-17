@@ -2,8 +2,6 @@
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
-
-  outline: 2px solid gold;
 }
 
 .catalog__list {
@@ -12,7 +10,8 @@
 
 .catalog__item {
   position: relative;
-  padding-top: 22px;
+  margin-bottom: 20px;
+  padding-top: 28px;
   background-color: #f2f2f2;
 
   &::before {
@@ -63,24 +62,25 @@
   margin: 0 20px;
 }
 
-.catalog__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
 .catalog__title {
   margin: 0;
   padding: 0;
-  padding-left: 80px;
+  margin-bottom: 30px;
+  padding-left: 72px;
 
   @include oswReg(24px, 37px);
+  text-transform: uppercase;
 }
 
 .catalog__description {
+  margin: 0;
+  margin-bottom: 22px;
+
   @include arialReg;
 }
 
-.catalog__button {
-  margin-bottom: 10px;
+.catalog__description br {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,7 +90,8 @@
   }
 
   .catalog__item {
-    padding-top: 80px;
+    margin-bottom: 30px;
+    padding-top: 75px;
 
     &::before {
       width: 200px;
@@ -115,33 +116,38 @@
   }
 
   .catalog__wrapper {
-    width: 380px;
+    width: 375px;
     margin: 0;
-    margin-left: 60px;
+    margin-left: 55px;
   }
 
   .catalog__title {
+    margin-bottom: 25px;
     padding-left: 0;
 
     font-size: 36px;
   }
 
   .catalog__description {
+    margin-bottom: 35px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .catalog__button {
-    margin-bottom: 65px;
+  .catalog__description br {
+    display: inline;
+  }
 
-    font-size: 20px;
-    line-height: 20px;
+  .catalog__button {
+    margin-bottom: 40px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .catalog {
     width: 1220px;
+    margin-bottom: 30px;
     padding: 0 40px;
   }
 
@@ -151,12 +157,9 @@
     width: 1220px;
   }
 
-  .catalog__item:not(:last-child) {
-    margin: 0;
-  }
-
   .catalog__item {
     width: 570px;
+    margin: 0;
 
     &::before {
       margin-left: 52px;
@@ -186,7 +189,15 @@
   }
 
   .catalog__title {
-    text-align: center;
-    margin-bottom: 40px;
+    margin-left: 162px;
+    margin-bottom: 70px;
+  }
+
+  .catalog__description {
+    margin-bottom: 15px;
+  }
+
+  .catalog__description br {
+    display: none;
   }
 }
