@@ -30,7 +30,89 @@
       </nav>
     </header>
 
-    <main class="page-main"></main>
+    <main class="page-main">
+
+      <section class="form">
+        <h2 class="form__title">Подбор программы</h2>
+        <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="form__main-info">
+            <p>
+              <label for="cat-name">Имя:<sup>*</sup></label>
+              <input type="text" id="cat-name" placeholder="БАРСИК" required>
+            </p>
+            <p>
+              <label for="weight">Вес(кг):<sup>*</sup></label>
+              <input type="text" id="weight" placeholder="7" required>
+            </p>
+            <p>
+              <label for="age">Возраст (лет):</label>
+              <input type="text" id="age" placeholder="7">
+            </p>
+          </fieldset>
+          <fieldset class="form__purpose">
+            <p>
+              <input type="radio" id="slim" name="program">
+              <label for="slim">Похудение</label>
+            </p>
+            <p>
+              <input type="radio" id="pro" name="program">
+              <label for="pro">Набор массы</label>
+            </p>
+            <p>
+              <input type="radio" id="need-help" name="program">
+              <label for="need-help">Не знаю (нужен ваш совет)</label>
+            </p>
+          </fieldset>
+          <fieldset class="form__cat-owner">
+            <legend>Контактные данные (владельца кота)</legend>
+            <p>
+              <label for="e-mail">e-mail:<sub>*</sub></label>
+              <input type="email" id="e-mail" placeholder="KUKLACHEV@GMAIL.COM" required>
+            </p>
+            <p>
+              <label for="phone">Телефон:<sub>*</sub></label>
+              <input type="tel" id="phone" placeholder="8(960)900-60-90">
+            </p>
+          </fieldset>
+          <fieldset class="form__comment">
+            <legend>Комментарий</legend>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="form__extra">
+            <legend>Дополнительно</legend>
+            <p>
+              <input type="checkbox" id="sweetener" name="sweetener" checked>
+              <label for="sweetener">Сахарозаменитель</label>
+            </p>
+            <p>
+              <input type="checkbox" id="water" name="water">
+              <label for="water">Вода</label>
+            </p>
+            <p>
+              <input type="checkbox" id="milk" name="milk">
+              <label for="milk">Молоко</label>
+            </p>
+            <p>
+              <input type="checkbox" id="vitamins" name="vitamins">
+              <label for="vitamins">Витамины</label>
+            </p>
+          </fieldset>
+          <button class="button" type="submit">Отправить заявку</button>
+          <small><sup>*</sup> &mdash; Обязательные поля</small>
+        </form>
+      </section>
+
+      <section class="contacts">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <div class="contacts__wrapper">
+            <b>Приглашаем к сотрудничеству дилеров!</b>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__sity">Санкт-Петербург</p>
+          </div>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD"></iframe>
+        </section>
+    </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -59,7 +141,7 @@
         <div class="page-footer__wrapper-bottom">
           <a class="page-footer__copyright-name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-logo">
-            <img src="./img/htmlacademy.svg" alt="HTML Academy лого" class="page-footer__copyright-image" width="27" height="34">
+            <span class="visually-hidden">HTML Academy лого</span>
           </a>
         </div>
       </div>
