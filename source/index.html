@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/scripts.js" defer></script>
   </head>
   <body>
     <header class="page-header page-header--index">
@@ -102,18 +101,15 @@
           </div>
         </div>
         <div class="real-story__wrapper-images">
-          <img class="real-stiry__image-before" src="#" alt="До программы Cat Enegry slim">
-          <img class="real-stiry__image-after" src="#" alt="После программы Cat Energy slim">
+          <img class="real-story__image-before" src="#" alt="До программы Cat Enegry slim">
+          <img class="real-story__image-after" src="#" alt="После программы Cat Energy slim">
         </div>
-        <div class="real-story__range range">
-          <p class="range__before">Было</p>
-          <div class="range__controls">
-              <div class="range__scale">
-                  <div class="range__bar"></div>
-              </div>
-              <div class="range__toggle"></div>
-          </div>
-          <p class="range__after">Стало</p>
+        <div class="real-story__slider slider">
+          <button class="slider__control">Было</button>
+            <div class="slider__scale">
+              <button class="slider__toggle"></button>
+            </div>
+          <button class="slider__control">Стало</button>
         </div>
       </section>
 
@@ -160,5 +156,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
