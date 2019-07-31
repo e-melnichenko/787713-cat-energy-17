@@ -1,0 +1,35 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  outline: 2px solid gold;
+}
+
+.contacts__wrapper {
+  display: flex;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.contacts__wrapper b {
+  width: 50%;
+
+  @include oswReg(16px, 20px);
+  text-transform: uppercase;
+}
+
+.contacts__wrapper-address {
+  width: 50%;
+}
+
+.contacts__wrapper-address p {
+  margin: 0;
+
+  @include arialReg(14px, 20px);
+}
+
+.contacts iframe {
+  width: 320px;
+  height: 360px;
+
+  border: none;
+}
