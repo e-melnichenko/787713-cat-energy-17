@@ -1,0 +1,73 @@
+.real-story {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  background-color: #f2f2f2;
+}
+
+.real-story__title {
+  margin: 30px 0;
+  padding: 0 20px;
+
+  @include oswReg(36px, 60px);
+}
+
+.real-story__description {
+  // display: block;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
+
+  @include arialReg(14px, 18px);
+}
+
+.real-story__wrapper-progress {
+  padding: 0 20px;
+}
+
+.real-story__progress-list {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+
+  @include resetList;
+}
+
+.real-story__progress-item {
+  width: 124px;
+}
+
+.real-story__progress-item b {
+  display: block;
+  padding: 16px 10px;
+
+  @include oswReg(24px, 24px);
+  text-align: center;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.real-story__progress-item p {
+  width: 65px;
+  padding: 0 10px;
+  margin: 0 auto;
+  margin-top: -10px;
+  background-color: #f2f2f2;
+
+  @include arialReg(12px, 12px);
+  text-align: center;
+}
+
+.real-story__expenses {
+  display: flex;
+  justify-content: center;
+}
+
+.real-story__expenses p {
+  @include oswReg(14px, 20px);
+  text-transform: uppercase;
+}
