@@ -1,9 +1,7 @@
 .form {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 20px;
-
-  outline: 2px solid gold;
+  margin-bottom: 35px;
 }
 
 .form label,
@@ -52,12 +50,11 @@
 
 .form__set p {
   display: flex;
-  width: 280px;
-  padding: 0 20px;
 }
 
 .form__title {
-  margin: 30px 0;
+  margin-top: 15px;
+  margin-bottom: 25px;
   padding: 0 20px;
 
   @include oswReg(36px, 60px);
@@ -65,7 +62,7 @@
 
 .form__description {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 40px;
 
@@ -73,17 +70,17 @@
   text-transform: uppercase;
 }
 
-.form__main-info label,
-.form__cat-owner label {
-  margin-right: 20px;
-}
+// .form__main-info label,
+// .form__cat-owner label {
+//   margin-right: 20px;
+// }
 
 
-.form__comment textarea {
-  width: 100%;
+// .form__comment textarea {
+//   width: 100%;
 
-  resize: none;
-}
+
+// }
 
 .form__button {
   width: 280px;

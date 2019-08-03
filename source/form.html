@@ -18,7 +18,7 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -40,67 +40,67 @@
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form__main-info form__set">
+          <fieldset class="form__set main-info">
             <p>
-              <label for="cat-name">Имя:<sup>*</sup></label>
-              <input type="text" id="cat-name" placeholder="БАРСИК" required>
+              <label for="cat-name">Имя:*</label>
+              <input type="text" id="cat-name" placeholder="БАРСИК" name="name" required>
             </p>
             <p>
-              <label for="weight">Вес(кг):<sup>*</sup></label>
-              <input type="text" id="weight" placeholder="7" required>
+              <label for="weight">Вес(кг):*</label>
+              <input type="text" id="weight" placeholder="7" name="weight" required>
             </p>
             <p>
               <label for="age">Возраст&nbsp;(лет):</label>
-              <input type="text" id="age" placeholder="7">
+              <input type="text" id="age" name="age" placeholder="7">
             </p>
           </fieldset>
-          <fieldset class="form__purpose form__set">
+          <fieldset class="form__set purpose">
             <p>
-              <input type="radio" id="slim" name="program">
+              <input type="radio" class="visually-hidden" id="slim" name="program-slim" checked>
               <label for="slim">Похудение</label>
             </p>
             <p>
-              <input type="radio" id="pro" name="program">
+              <input type="radio" class="visually-hidden" id="pro" name="program-pro">
               <label for="pro">Набор массы</label>
             </p>
             <p>
-              <input type="radio" id="need-help" name="program">
+              <input type="radio" class="visually-hidden" id="need-help" name="program-help">
               <label for="need-help">Не знаю (нужен ваш совет)</label>
             </p>
           </fieldset>
-          <fieldset class="form__cat-owner form__set form__set--with-title">
+          <fieldset class="form__set form__set--with-title cat-owner">
             <legend>Контактные данные (владельца кота)</legend>
             <p>
-              <label for="e-mail">e-mail:<sup>*</sup></label>
-              <input type="email" id="e-mail" placeholder="KUKLACHEV@GMAIL.COM" required>
+              <label for="e-mail">e-mail:*</label>
+              <input type="email" id="e-mail" placeholder="KUKLACHEV@GMAIL.COM" name="email" required>
             </p>
             <p>
-              <label for="phone">Телефон:<sup>*</sup></label>
-              <input type="tel" id="phone" placeholder="8(960)900-60-90">
+              <label for="phone">Телефон:*</label>
+              <input type="tel" id="phone" placeholder="8 (960) 900-60-90" name="phone">
             </p>
           </fieldset>
-          <fieldset class="form__comment form__set form__set--with-title">
+          <fieldset class="form__set form__set--with-title comment">
             <legend>Комментарий</legend>
             <p>
-              <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
           </fieldset>
-          <fieldset class="form__extra form__set form__set--with-title">
+          <fieldset class="form__set form__set--with-title extra-form">
             <legend>Дополнительно</legend>
             <p>
-              <input type="checkbox" id="sweetener" name="sweetener" checked>
+              <input type="checkbox" class="visually-hidden" id="sweetener" name="sweetener" checked>
               <label for="sweetener">Сахарозаменитель</label>
             </p>
             <p>
-              <input type="checkbox" id="water" name="water">
+              <input type="checkbox" class="visually-hidden" id="water" name="water">
               <label for="water">Вода</label>
             </p>
             <p>
-              <input type="checkbox" id="milk" name="milk">
+              <input type="checkbox" class="visually-hidden" id="milk" name="milk">
               <label for="milk">Молоко</label>
             </p>
             <p>
-              <input type="checkbox" id="vitamins" name="vitamins">
+              <input type="checkbox" class="visually-hidden" id="vitamins" name="vitamins">
               <label for="vitamins">Витамины</label>
             </p>
           </fieldset>
@@ -112,7 +112,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Наш адрес</h2>
         <div class="contacts__wrapper">
-          <b>Приглашаем к сотрудничеству дилеров!</b>
+          <b>Приглашаем к&nbsp;сотрудничеству дилеров!</b>
           <div class="contacts__wrapper-address">
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
             <p class="contacts__sity">Санкт-Петербург</p>

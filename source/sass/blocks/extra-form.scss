@@ -1,0 +1,40 @@
+.extra-form {
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.extra-form legend {
+  padding-bottom: 5px;
+}
+
+.extra-form p {
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.extra-form label {
+  padding-left: 45px;
+}
+
+.extra-form input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid #e5e5e5;
+}
+
+.extra-form input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  width: 21px;
+  height: 16px;
+
+  background-image: url("../../img/icon-tick.svg");
+}
