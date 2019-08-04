@@ -9,8 +9,6 @@
 .form input[type="text"],
 .form input[type="tel"],
 .form input[type="email"] {
-  // padding: 12px 0;
-
   @include oswReg(16px, 18px);
   text-transform: uppercase;
 }
@@ -145,20 +143,19 @@
   .form__wrapper {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     flex-wrap: wrap;
     width: 688px;
+    margin: 0 auto;
     padding: 0 40px;
   }
 
   .form__button {
     width: 283px;
     margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 0;
     padding-top: 16px;
     padding-bottom: 16px;
-    // margin: 30px 0;
-    margin-right: 30px;
   }
 
   .form small {
@@ -166,5 +163,61 @@
 
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: auto;
+    margin-bottom: 80px;
+  }
+
+  .form__wrapper-head {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .form__wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 40px;
+
+  }
+
+  .form__title {
+    margin-top: 20px;
+    margin-bottom: 55px;
+    padding: 0;
+  }
+
+  .form__description {
+    width: 325px;
+    margin-left: 0px;
+    padding: 0;
+  }
+
+  .form__set legend {
+    margin: 0;
+    margin-left: calc((100% - 1300px) / 2);
+  }
+
+  .form__wrapper {
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .form__button {
+    width: 570px;
+    margin: 0;
+  }
+
+  .form small {
+    width: 570px;
+    margin: 0;
+    text-align: left;
   }
 }

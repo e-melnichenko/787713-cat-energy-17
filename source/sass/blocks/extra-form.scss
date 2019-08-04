@@ -57,7 +57,6 @@
 
   .extra-form__wrapper {
     display: flex;
-    // justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 30px;
     margin-left: 10px;
@@ -66,8 +65,6 @@
 
   .extra-form__wrapper p {
     width: 50%;
-    // margin: 30px 0;
-    // margin-right: 30px;
   }
 
   .extra-form__wrapper label {
@@ -85,5 +82,34 @@
 
   .extra-form input[type="checkbox"]:checked + label::after {
     left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-form {
+    margin-bottom: 45px;
+  }
+
+  .extra-form__wrapper {
+    justify-content: space-between;
+    width: 1220px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  .extra-form__wrapper p {
+    width: 245px;
+  }
+
+  .extra-form__wrapper label {
+    padding-left: 60px;
+  }
+
+  .extra-form input[type="checkbox"] + label::before {
+    left: 0px;
+  }
+
+  .extra-form input[type="checkbox"]:checked + label::after {
+    left: 10px;
   }
 }

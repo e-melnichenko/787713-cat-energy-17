@@ -65,3 +65,23 @@
     height: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .purpose {
+    width: 570px;
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  .purpose label {
+    padding-left: 90px;
+  }
+
+  .purpose label::before {
+    left: 28px;
+  }
+
+  .purpose input[type="radio"]:checked + label::after {
+    left: 39px;
+  }
+}

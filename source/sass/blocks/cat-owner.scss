@@ -35,3 +35,18 @@
     margin-right: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .cat-owner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .cat-owner p {
+    width: 570px;
+    padding: 0;
+  }
+}

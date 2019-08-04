@@ -21,3 +21,15 @@
     margin-right: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-info {
+    width: 570px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-info label {
+    margin-right: 20px;
+  }
+}
