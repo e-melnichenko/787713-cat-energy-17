@@ -1,7 +1,7 @@
 .form {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .form label,
@@ -9,7 +9,7 @@
 .form input[type="text"],
 .form input[type="tel"],
 .form input[type="email"] {
-  padding: 12px 0;
+  // padding: 12px 0;
 
   @include oswReg(16px, 18px);
   text-transform: uppercase;
@@ -21,8 +21,7 @@
 .form input[type="email"] {
   min-width: 100px;
   flex-grow: 1;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 12px;
   box-sizing: border-box;
 
   border: 1px solid #e6e6e6;
@@ -50,6 +49,7 @@
 
 .form__set p {
   display: flex;
+  align-items: center;
 }
 
 .form__title {
@@ -69,23 +69,14 @@
   @include oswReg(14px, 18px);
   text-transform: uppercase;
 }
-
-// .form__main-info label,
-// .form__cat-owner label {
-//   margin-right: 20px;
-// }
-
-
-// .form__comment textarea {
-//   width: 100%;
-
-
-// }
-
-.form__button {
+.form__wrapper {
   width: 280px;
-  margin: 0 20px;
-  margin-bottom: 20px;
+  padding: 0 20px;
+
+}
+.form__button {
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 .form small {
@@ -93,4 +84,87 @@
 
   @include arialReg(14px, 16px);
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 768px;
+    margin-bottom: 70px;
+  }
+
+  .form__title {
+    margin-top: 35px;
+    margin-bottom: 55px;
+    padding: 0 30px;
+    font-size: 60px;
+  }
+
+  .form__description {
+    @include oswReg(20px, 30px);
+    margin-left: 40px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 330px;
+  }
+
+  .form label,
+  .form textarea,
+  .form input[type="text"],
+  .form input[type="tel"],
+  .form input[type="email"] {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form textarea,
+  .form input[type="text"],
+  .form input[type="tel"],
+  .form input[type="email"] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .form__set {
+    border-bottom: none;
+  }
+
+  .form__set legend {
+    max-width: none;
+    padding: 0 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__button {
+    font-size: 20px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    width: 688px;
+    padding: 0 40px;
+  }
+
+  .form__button {
+    width: 283px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    // margin: 30px 0;
+    margin-right: 30px;
+  }
+
+  .form small {
+    margin-left: 30px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

@@ -14,3 +14,18 @@
 .comment textarea {
   resize: none;
 }
+
+@media (min-width: $tablet-width) {
+  .comment {
+    margin-bottom: 60px;
+  }
+
+  .comment legend {
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+  }
+
+  .comment p {
+    padding: 0 70px;
+  }
+}

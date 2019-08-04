@@ -46,7 +46,7 @@
               <input type="text" id="cat-name" placeholder="БАРСИК" name="name" required>
             </p>
             <p>
-              <label for="weight">Вес(кг):*</label>
+              <label for="weight">Вес (кг):*</label>
               <input type="text" id="weight" placeholder="7" name="weight" required>
             </p>
             <p>
@@ -56,15 +56,15 @@
           </fieldset>
           <fieldset class="form__set purpose">
             <p>
-              <input type="radio" class="visually-hidden" id="slim" name="program-slim" checked>
+              <input type="radio" class="visually-hidden" id="slim" name="program" value="slim" checked>
               <label for="slim">Похудение</label>
             </p>
             <p>
-              <input type="radio" class="visually-hidden" id="pro" name="program-pro">
+              <input type="radio" class="visually-hidden" id="pro" name="program" value="pro">
               <label for="pro">Набор массы</label>
             </p>
             <p>
-              <input type="radio" class="visually-hidden" id="need-help" name="program-help">
+              <input type="radio" class="visually-hidden" id="need-help" name="program" value="need-help">
               <label for="need-help">Не знаю (нужен ваш совет)</label>
             </p>
           </fieldset>
@@ -87,25 +87,29 @@
           </fieldset>
           <fieldset class="form__set form__set--with-title extra-form">
             <legend>Дополнительно</legend>
-            <p>
-              <input type="checkbox" class="visually-hidden" id="sweetener" name="sweetener" checked>
-              <label for="sweetener">Сахарозаменитель</label>
-            </p>
-            <p>
-              <input type="checkbox" class="visually-hidden" id="water" name="water">
-              <label for="water">Вода</label>
-            </p>
-            <p>
-              <input type="checkbox" class="visually-hidden" id="milk" name="milk">
-              <label for="milk">Молоко</label>
-            </p>
-            <p>
-              <input type="checkbox" class="visually-hidden" id="vitamins" name="vitamins">
-              <label for="vitamins">Витамины</label>
-            </p>
+            <div class="extra-form__wrapper">
+              <p>
+                <input type="checkbox" class="visually-hidden" id="sweetener" name="sweetener" checked>
+                <label for="sweetener">Сахарозаменитель</label>
+              </p>
+              <p>
+                <input type="checkbox" class="visually-hidden" id="water" name="water">
+                <label for="water">Питьевая вода</label>
+              </p>
+              <p>
+                <input type="checkbox" class="visually-hidden" id="milk" name="milk">
+                <label for="milk">Молоко</label>
+              </p>
+              <p>
+                <input type="checkbox" class="visually-hidden" id="vitamins" name="vitamins">
+                <label for="vitamins">Витамины</label>
+              </p>
+            </div>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <small>* &mdash; Обязательные поля</small>
+          <div class="form__wrapper">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <small>* &mdash; Обязательные поля</small>
+          </div>
         </form>
       </section>
 
