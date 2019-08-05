@@ -1,22 +1,22 @@
 .real-story {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  padding-top: 20px;
 
   background-color: #f2f2f2;
 }
 
 .real-story__title {
-  margin: 30px 0;
+  margin: 0;
+  margin-bottom: 20px;
   padding: 0 20px;
 
   @include oswReg(36px, 60px);
 }
 
 .real-story__description {
-  // display: block;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding-left: 20px;
   padding-right: 25px;
 
@@ -24,6 +24,7 @@
 }
 
 .real-story__wrapper-progress {
+  margin-bottom: 20px;
   padding: 0 20px;
 }
 
@@ -33,6 +34,7 @@
   width: 280px;
 
   @include resetList;
+  margin-bottom: 5px;
 }
 
 .real-story__progress-item {
@@ -70,4 +72,17 @@
 .real-story__expenses p {
   @include oswReg(14px, 20px);
   text-transform: uppercase;
+}
+
+.real-story__image--before,
+.real-story__image--after {
+ display: none;
+}
+
+.real-story__image--active {
+  display: block;
+}
+
+.real-story__wrapper-images {
+  margin-bottom: 30px;
 }
