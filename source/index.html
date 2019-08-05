@@ -92,34 +92,48 @@
       </section>
 
       <section class="real-story">
-        <h2 class="real-story__title">Живой пример</h2>
-        <p class="real-story__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="real-story__wrapper-progress">
-          <ul class="real-story__progress-list">
-            <li class="real-story__progress-item">
-              <b>5 кг</b>
-              <p>снижение веса</p>
-            </li>
-            <li class="real-story__progress-item">
-              <b>60 дней</b>
-              <p>затрачено времени</p>
-            </li>
-          </ul>
-          <div class="real-story__expenses">
-            <p>Затраты на питание:</p>
-            <p>15 000 руб.</p>
-          </div>
-        </div>
-        <div class="real-story__wrapper-images">
-          <img class="real-story__image--before real-story__image--active" src="./img/before-mobile@1x.png" width="320" height="240" alt="До программы Cat Enegry slim">
-          <img class="real-story__image--after" src="./img/after-mobile@1x.png" width="320" height="240" alt="После программы Cat Energy slim">
-        </div>
-        <div class="real-story__slider slider">
-          <button class="slider__control slider__button-before">Было</button>
-            <div class="slider__scale">
-              <button class="slider__toggle slider__toggle--left"></button>
+        <div class="real-story__wrapper">
+          <h2 class="real-story__title">Живой пример</h2>
+          <p class="real-story__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день. </p>
+          <div class="real-story__wrapper-progress">
+            <ul class="real-story__progress-list">
+              <li class="real-story__progress-item">
+                <b>5 кг</b>
+                <div>
+                  <p>снижение веса</p>
+                </div>
+              </li>
+              <li class="real-story__progress-item">
+                <b>60 дней</b>
+                <div>
+                  <p>затрачено времени</p>
+                </div>
+              </li>
+            </ul>
+            <div class="real-story__expenses">
+              <p>Затраты на питание:</p>
+              <p>15 000 руб.</p>
             </div>
-          <button class="slider__control slider__button-after">Стало</button>
+          </div>
+          <div class="real-story__wrapper-images">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
+              <img class="real-story__image--before real-story__image--active" src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" width="320" height="240" alt="До программы Cat Enegry slim">
+            </picture>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="./img/after-desktop@1x.png 1x, ./img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/after-tablet@1x.png 1x, ./img/after-tablet@2x.png 2x">
+              <img class="real-story__image--after" src="./img/after-mobile@1x.png" srcset="./img/after-mobile@2x.png 2x" width="320" height="240" alt="После программы Cat Enegry slim">
+            </picture>
+          </div>
+          <div class="real-story__slider slider">
+            <button class="slider__control slider__button-before">Было</button>
+              <div class="slider__scale">
+                <button class="slider__toggle slider__toggle--left"></button>
+              </div>
+            <button class="slider__control slider__button-after">Стало</button>
+          </div>
         </div>
       </section>
 
