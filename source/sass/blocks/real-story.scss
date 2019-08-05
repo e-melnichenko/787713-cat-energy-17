@@ -190,3 +190,56 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .real-story__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    padding-top: 0;
+  }
+
+  .real-story__wrapper-left {
+    width: 435px;
+    padding: 0 40px;
+    padding-top: 50px;
+  }
+
+  .real-story__title {
+    margin-bottom: 150px;
+    padding: 0;
+  }
+
+  .real-story__description {
+    margin-bottom: 65px;
+    padding: 0;
+  }
+
+  .real-story__wrapper-progress {
+    display: block;
+    margin-bottom: 65px;
+    padding: 0;
+  }
+
+  .real-story__progress-list {
+    margin-bottom: 40px;
+  }
+
+  .real-story__progress-item p {
+    background-color: #eaeaea;
+  }
+
+  .real-story__expenses {
+    display: flex;
+    justify-content: space-between;
+    width: 330px;
+  }
+
+  .real-story__wrapper-right {
+    width: 690px;
+  }
+
+  .real-story__wrapper-images {
+    margin-bottom: 30px;
+  }
+}

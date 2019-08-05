@@ -104,3 +104,12 @@
     right: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 570px;
+    padding: 0 40px;
+    margin: 0;
+    margin-left: 40px;
+  }
+}

@@ -84,12 +84,15 @@
 
   .page-footer__wrapper-social {
     width: 130px;
+    padding: 0;
 
     border: none;
   }
 
   .page-footer__wrapper-bottom {
     width: 162px;
+    padding: 0;
+    padding-bottom: 10px;
   }
 }
 
