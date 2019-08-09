@@ -18,7 +18,7 @@ ymaps.ready(function () {
     {balloonContentBody: "<div class='ballon-point'><div class='ballon-img'><img src='/wp-content/themes/mytheme/img/logo.png'/></div><div class='ballon-content'>Cat Energy</div></div>"},
     {
     iconLayout: 'default#image',
-    iconImageHref: '../img/map-pin.png',
+    iconImageHref: './img/map-pin.png',
     iconImageSize: imageSize,
     iconImageOffset: imageOffset,
   });
