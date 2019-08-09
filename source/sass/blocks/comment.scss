@@ -1,0 +1,44 @@
+.comment {
+  margin-bottom: 15px;
+}
+
+.comment legend {
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.comment p {
+  padding: 0 20px;
+}
+
+.comment textarea {
+  resize: none;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    margin-bottom: 60px;
+  }
+
+  .comment legend {
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+  }
+
+  .comment p {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment legend {
+    margin-bottom: 65px;
+  }
+
+  .comment p {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 0 40px;
+  }
+}

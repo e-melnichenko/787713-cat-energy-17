@@ -1,0 +1,35 @@
+.main-info {
+  padding: 0 20px;
+  padding-bottom: 10px;
+}
+
+.main-info p {
+  margin: 15px 0;
+}
+
+.main-info label {
+  margin-right: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-info {
+    margin-bottom: 55px;
+    padding: 0 70px;
+  }
+
+  .main-info label {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-info {
+    width: 570px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-info label {
+    margin-right: 20px;
+  }
+}

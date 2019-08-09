@@ -6,6 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/picturefill.js" async></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8d70ab2a-f61a-433f-879e-e6e83f658e41"></script>
   </head>
   <body>
     <header class="page-header">
@@ -18,7 +19,7 @@
           </picture>
         </a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -37,88 +38,98 @@
     <main class="page-main">
 
       <section class="form">
-        <h2 class="form__title">Подбор программы</h2>
-        <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <div class="form__wrapper-head">
+          <h2 class="form__title">Подбор программы</h2>
+          <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="form__main-info form__set">
-            <p>
-              <label for="cat-name">Имя:<sup>*</sup></label>
-              <input type="text" id="cat-name" placeholder="БАРСИК" required>
-            </p>
-            <p>
-              <label for="weight">Вес(кг):<sup>*</sup></label>
-              <input type="text" id="weight" placeholder="7" required>
-            </p>
-            <p>
-              <label for="age">Возраст&nbsp;(лет):</label>
-              <input type="text" id="age" placeholder="7">
-            </p>
-          </fieldset>
-          <fieldset class="form__purpose form__set">
-            <p>
-              <input type="radio" id="slim" name="program">
-              <label for="slim">Похудение</label>
-            </p>
-            <p>
-              <input type="radio" id="pro" name="program">
-              <label for="pro">Набор массы</label>
-            </p>
-            <p>
-              <input type="radio" id="need-help" name="program">
-              <label for="need-help">Не знаю (нужен ваш совет)</label>
-            </p>
-          </fieldset>
-          <fieldset class="form__cat-owner form__set form__set--with-title">
+          <div class="form__wrapper-top">
+            <fieldset class="form__set main-info">
+              <p>
+                <label for="cat-name">Имя:*</label>
+                <input type="text" id="cat-name" placeholder="БАРСИК" name="name" required>
+              </p>
+              <p>
+                <label for="weight">Вес (кг):*</label>
+                <input type="text" id="weight" placeholder="7" name="weight" required>
+              </p>
+              <p>
+                <label for="age">Возраст&nbsp;(лет):</label>
+                <input type="text" id="age" name="age" placeholder="7">
+              </p>
+            </fieldset>
+            <fieldset class="form__set purpose">
+              <p>
+                <input type="radio" class="visually-hidden" id="slim" name="program" value="slim" checked>
+                <label for="slim">Похудение</label>
+              </p>
+              <p>
+                <input type="radio" class="visually-hidden" id="pro" name="program" value="pro">
+                <label for="pro">Набор массы</label>
+              </p>
+              <p>
+                <input type="radio" class="visually-hidden" id="need-help" name="program" value="need-help">
+                <label for="need-help">Не знаю (нужен ваш совет)</label>
+              </p>
+            </fieldset>
+          </div>
+          <fieldset class="form__set form__set--with-title cat-owner">
             <legend>Контактные данные (владельца кота)</legend>
-            <p>
-              <label for="e-mail">e-mail:<sup>*</sup></label>
-              <input type="email" id="e-mail" placeholder="KUKLACHEV@GMAIL.COM" required>
-            </p>
-            <p>
-              <label for="phone">Телефон:<sup>*</sup></label>
-              <input type="tel" id="phone" placeholder="8(960)900-60-90">
-            </p>
+            <div class="cat-owner__wrapper">
+              <p>
+                <label for="e-mail">e-mail:*</label>
+                <input type="email" id="e-mail" placeholder="KUKLACHEV@GMAIL.COM" name="email" required>
+              </p>
+              <p>
+                <label for="phone">Телефон:*</label>
+                <input type="tel" id="phone" placeholder="8 (960) 900-60-90" name="phone">
+              </p>
+            </div>
           </fieldset>
-          <fieldset class="form__comment form__set form__set--with-title">
+          <fieldset class="form__set form__set--with-title comment">
             <legend>Комментарий</legend>
             <p>
-              <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea name="comment" id="comment" cols="30" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
           </fieldset>
-          <fieldset class="form__extra form__set form__set--with-title">
+          <fieldset class="form__set form__set--with-title extra-form">
             <legend>Дополнительно</legend>
-            <p>
-              <input type="checkbox" id="sweetener" name="sweetener" checked>
-              <label for="sweetener">Сахарозаменитель</label>
-            </p>
-            <p>
-              <input type="checkbox" id="water" name="water">
-              <label for="water">Вода</label>
-            </p>
-            <p>
-              <input type="checkbox" id="milk" name="milk">
-              <label for="milk">Молоко</label>
-            </p>
-            <p>
-              <input type="checkbox" id="vitamins" name="vitamins">
-              <label for="vitamins">Витамины</label>
-            </p>
+            <div class="extra-form__wrapper">
+              <p>
+                <input type="checkbox" class="visually-hidden" id="sweetener" name="sweetener" checked>
+                <label for="sweetener">Сахарозаменитель</label>
+              </p>
+              <p>
+                <input type="checkbox" class="visually-hidden" id="water" name="water">
+                <label for="water">Питьевая вода</label>
+              </p>
+              <p>
+                <input type="checkbox" class="visually-hidden" id="milk" name="milk">
+                <label for="milk">Молоко</label>
+              </p>
+              <p>
+                <input type="checkbox" class="visually-hidden" id="vitamins" name="vitamins">
+                <label for="vitamins">Витамины</label>
+              </p>
+            </div>
           </fieldset>
-          <button class="form__button button" type="submit">Отправить заявку</button>
-          <small>* &mdash; Обязательные поля</small>
+          <div class="form__wrapper">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <small>* &mdash; Обязательные поля</small>
+          </div>
         </form>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Наш адрес</h2>
         <div class="contacts__wrapper">
-          <b>Приглашаем к сотрудничеству дилеров!</b>
+          <b>Приглашаем к&nbsp;сотрудничеству дилеров!</b>
           <div class="contacts__wrapper-address">
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
             <p class="contacts__sity">Санкт-Петербург</p>
           </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD"></iframe>
+        <div class="contacts__wrapper-map" id="map"></div>
       </section>
     </main>
 
@@ -155,5 +166,6 @@
       </div>
     </footer>
     <script src="./js/scripts.js"></script>
+    <script src="./js/map.js"></script>
   </body>
 </html>

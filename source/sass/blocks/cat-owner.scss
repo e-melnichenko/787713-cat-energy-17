@@ -1,0 +1,52 @@
+.cat-owner {
+  margin-bottom: 15px;
+}
+
+.cat-owner legend {
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+.cat-owner p {
+  margin: 15px 0;
+  padding: 0 20px;
+}
+
+.cat-owner label {
+  margin-right: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-owner {
+    margin-bottom: 50px;
+  }
+
+  .cat-owner legend {
+    margin-bottom: 50px;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+
+  .cat-owner p {
+    padding: 0 70px;
+  }
+
+  .cat-owner label {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-owner__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .cat-owner p {
+    width: 570px;
+    padding: 0;
+  }
+}

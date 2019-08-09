@@ -1,0 +1,96 @@
+.purpose {
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.purpose p {
+  position: relative;
+  margin: 25px 0;
+}
+
+.purpose label {
+  padding-left: 45px;
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #dfdfdf;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.purpose label::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.purpose input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+
+  background-color: $green;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .purpose {
+    margin: 0 70px;
+    margin-bottom: 75px;
+    border: 1px solid #e6e6e6;
+  }
+
+  .purpose p {
+    margin: 33px 0;
+  }
+
+  .purpose label {
+    padding-left: 65px;
+  }
+
+  .purpose label::before {
+    top: -8px;
+    left: 8px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .purpose input[type="radio"]:checked + label::after {
+    top: 3px;
+    left: 19px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .purpose {
+    width: 570px;
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  .purpose label {
+    padding-left: 90px;
+  }
+
+  .purpose label::before {
+    left: 28px;
+  }
+
+  .purpose input[type="radio"]:checked + label::after {
+    left: 39px;
+  }
+}
