@@ -1,5 +1,4 @@
 .extra-form {
-  // padding-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -10,7 +9,6 @@
 
 .extra-form__wrapper {
   padding: 0 20px;
-
 }
 
 .extra-form p {
@@ -20,6 +18,15 @@
 
 .extra-form label {
   padding-left: 45px;
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #dfdfdf;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .extra-form input[type="checkbox"] + label::before {
@@ -106,7 +113,7 @@
   }
 
   .extra-form input[type="checkbox"] + label::before {
-    left: 0px;
+    left: 0;
   }
 
   .extra-form input[type="checkbox"]:checked + label::after {

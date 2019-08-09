@@ -1,5 +1,4 @@
 .real-story {
-
   background-color: #f2f2f2;
 }
 
@@ -7,7 +6,6 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 20px;
-
 }
 
 .real-story__title {
@@ -81,7 +79,7 @@
 
 .real-story__image--before,
 .real-story__image--after {
- display: none;
+  display: none;
 }
 
 .real-story__image--active {
@@ -140,7 +138,7 @@
 
   .real-story__progress-list {
     width: 365px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .real-story__progress-item {
@@ -184,7 +182,7 @@
     margin-bottom: 15px;
   }
 
-  .real-story__wrapper-images img{
+  .real-story__wrapper-images img {
     width: 690px;
     height: 517px;
     margin: 0 auto;

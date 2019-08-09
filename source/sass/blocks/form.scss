@@ -22,8 +22,20 @@
   padding: 12px;
   box-sizing: border-box;
 
-  border: 1px solid #e6e6e6;
+  border: 1px solid rgba(#cdcdcd, 0.5%);
+
+  &:hover,
+  &:focus {
+    border-color: #cdcdcd;
+  }
+
+  &:active {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border: 2px solid #444444;
+  }
 }
+
 
 .form__set {
   margin: 0;
@@ -67,11 +79,12 @@
   @include oswReg(14px, 18px);
   text-transform: uppercase;
 }
+
 .form__wrapper {
   width: 280px;
   padding: 0 20px;
-
 }
+
 .form__button {
   width: 100%;
   margin-bottom: 25px;
@@ -136,10 +149,6 @@
     line-height: 36px;
   }
 
-  .form__button {
-    font-size: 20px;
-  }
-
   .form__wrapper {
     display: flex;
     align-items: center;
@@ -156,6 +165,8 @@
     margin-bottom: 0;
     padding-top: 16px;
     padding-bottom: 16px;
+
+    font-size: 20px;
   }
 
   .form small {
@@ -185,7 +196,6 @@
     margin: 0 auto;
     margin-bottom: 50px;
     padding: 0 40px;
-
   }
 
   .form__title {
@@ -196,7 +206,7 @@
 
   .form__description {
     width: 325px;
-    margin-left: 0px;
+    margin-left: 0;
     padding: 0;
   }
 
