@@ -97,6 +97,16 @@
   text-align: center;
 }
 
+.form input.form__invalid {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 2px solid #ff8282;
+}
+
+.form__invalid + .cat-owner__icon {
+  fill: #ff8282;
+}
+
 @media (min-width: $tablet-width) {
   .form {
     width: 768px;

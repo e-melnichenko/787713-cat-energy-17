@@ -8,12 +8,22 @@
 }
 
 .cat-owner p {
+  position: relative;
   margin: 15px 0;
   padding: 0 20px;
 }
 
 .cat-owner label {
   margin-right: 10px;
+}
+
+.cat-owner__icon {
+  position: absolute;
+  left: 265px;
+}
+
+.cat-owner input:active + .cat-owner__icon {
+  fill: $green;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,6 +44,10 @@
   .cat-owner label {
     margin-right: 20px;
   }
+
+  .cat-owner__icon {
+    left: 665px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -48,5 +62,9 @@
   .cat-owner p {
     width: 570px;
     padding: 0;
+  }
+
+  .cat-owner__icon {
+    left: 535px;
   }
 }
