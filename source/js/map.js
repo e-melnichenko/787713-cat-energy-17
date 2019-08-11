@@ -1,7 +1,7 @@
-let width = document.body.clientWidth;
-let locationCenter = (width >= 1300) ? [59.938819, 30.319378] : [59.938840, 30.323026];
-let imageSize = (width >= 768) ? [124, 106] : [62, 53];
-let imageOffset = (width >= 768) ? [-40, -80] : [-20, -42];
+var width = document.body.clientWidth;
+var locationCenter = (width >= 1300) ? [59.938819, 30.319378] : [59.938840, 30.323026];
+var imageSize = (width >= 768) ? [124, 106] : [62, 53];
+var imageOffset = (width >= 768) ? [-40, -80] : [-20, -42];
 
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {

@@ -1,10 +1,10 @@
-const buttonBefore = document.querySelector('.slider__button-before');
-const buttonAfter = document.querySelector('.slider__button-after');
-const imageBefore = document.querySelector('.real-story__image--before');
-const imageAfter = document.querySelector('.real-story__image--after');
-const imageToggle = document.querySelector('.slider__toggle');
+var buttonBefore = document.querySelector('.slider__button-before');
+var buttonAfter = document.querySelector('.slider__button-after');
+var imageBefore = document.querySelector('.real-story__image--before');
+var imageAfter = document.querySelector('.real-story__image--after');
+var imageToggle = document.querySelector('.slider__toggle');
 
-buttonBefore.addEventListener('click', () => {
+buttonBefore.addEventListener('click', function() {
   if(imageBefore.classList.contains('real-story__image--active')) return;
   imageAfter.classList.remove('real-story__image--active');
   imageBefore.classList.add('real-story__image--active');
@@ -13,7 +13,7 @@ buttonBefore.addEventListener('click', () => {
 
 });
 
-buttonAfter.addEventListener('click', () => {
+buttonAfter.addEventListener('click', function() {
   if(imageAfter.classList.contains('real-story__image--active')) return;
   imageBefore.classList.remove('real-story__image--active');
   imageAfter.classList.add('real-story__image--active');

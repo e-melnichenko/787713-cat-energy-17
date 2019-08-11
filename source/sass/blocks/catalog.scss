@@ -154,12 +154,13 @@
   .catalog__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 1220px;
   }
 
   .catalog__item {
     width: 570px;
-    margin: 0;
+    margin-bottom: 10px;
 
     &::before {
       margin-left: 52px;

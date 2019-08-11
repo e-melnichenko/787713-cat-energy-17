@@ -61,10 +61,11 @@
   padding: 0 10px;
   margin: 0 auto;
   margin-top: -10px;
-  background-color: #f2f2f2;
 
   @include arialReg(12px, 12px);
   text-align: center;
+
+  background-color: #f2f2f2;
 }
 
 .real-story__expenses {

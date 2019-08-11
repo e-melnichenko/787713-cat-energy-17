@@ -8,9 +8,9 @@
 }
 
 .contacts__wrapper {
+  display: flex;
   width: 280px;
   margin: 0 auto;
-  display: flex;
   margin-bottom: 25px;
   padding: 0 20px;
   padding-top: 30px;
@@ -53,6 +53,7 @@
   top: 130px;
   width: 62px;
   height: 53px;
+
   background-image: url("../img/map-pin.png");
   background-size: contain;
 }
@@ -69,6 +70,7 @@
     width: 200px;
     margin-top: 65px;
     padding-left: 40px;
+
     font-size: 20px;
     line-height: 25px;
   }
@@ -81,6 +83,7 @@
 
   .contacts__wrapper-address p {
     margin-bottom: 20px;
+
     font-size: 16px;
     line-height: 20px;
     text-align: right;

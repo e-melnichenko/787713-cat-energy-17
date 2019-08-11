@@ -1,11 +1,12 @@
 'use strict'
+svg4everybody();
 
-const mainNav = document.querySelector('.main-nav');
-const menuToggle = document.querySelector('.main-nav__toggle');
+var mainNav = document.querySelector('.main-nav');
+var menuToggle = document.querySelector('.main-nav__toggle');
 
 mainNav.classList.remove('main-nav--nojs');
 
-menuToggle.addEventListener('click', () => {
+menuToggle.addEventListener('click', function () {
 
   if(mainNav.classList.contains('main-nav--closed')) {
     mainNav.classList.remove('main-nav--closed');

@@ -120,7 +120,6 @@
       top: 0;
 
       margin-top: -40px;
-      // margin-left: 150px;
       z-index: -10;
 
       @include oswReg(281px, 281px, #f2f2f2);
@@ -163,6 +162,7 @@
   }
 
   .advantages__title {
-    padding: 40px 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
