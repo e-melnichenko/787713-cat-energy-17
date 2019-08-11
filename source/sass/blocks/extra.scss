@@ -1,5 +1,5 @@
 .extra {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   border-top: 3px solid $green;
 }
@@ -80,6 +80,7 @@
 
 .extra__gift {
   min-height: 290px;
+  position: relative;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -89,6 +90,13 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
+}
+
+.extra__icon-gift {
+  position: absolute;
+  left: 112.5px;
+  top: 65px;
+  fill: white;
 }
 
 .extra__gift p {
@@ -188,6 +196,10 @@
     }
   }
 
+  .extra__icon-gift {
+    left: 90px;
+  }
+
   .extra__gift p {
     position: absolute;
     top: 70px;
@@ -257,6 +269,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
+  }
+
+  .extra__icon-gift {
+    left: 95px;
   }
 
   .extra__gift p {

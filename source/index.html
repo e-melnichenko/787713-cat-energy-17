@@ -6,7 +6,6 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/picturefill.js" async></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8d70ab2a-f61a-433f-879e-e6e83f658e41"></script>
   </head>
   <body>
     <header class="page-header page-header--index">
@@ -60,14 +59,30 @@
             <div class="catalog__wrapper">
               <h3 class="catalog__title catalog__title--slim">Похудение</h3>
               <p class="catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a href="./catalog.html" class="catalog__button button button--catalog">Каталог slim</a>
+              <a href="./catalog.html" class="catalog__button button button--catalog">
+                Каталог slim
+                <svg class="button__right-arrow-long" width="24" height="11">
+                  <use href="img/sprite.svg#right-arrow-long"></use>
+                </svg>
+                <svg class="button__right-arrow-verylong" width="33" height="11">
+                  <use href="img/sprite.svg#right-arrow-verylong"></use>
+                </svg>
+              </a>
             </div>
           </li>
           <li class="catalog__item catalog__item--pro">
             <div class="catalog__wrapper">
               <h3 class="catalog__title catalog__title--pro">Набор массы</h3>
               <p class="catalog__description">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br>мышцы!</p>
-              <a href="./catalog.html" class="catalog__button button button--catalog">Каталог pro</a>
+              <a href="./catalog.html" class="catalog__button button button--catalog">
+                Каталог pro
+                <svg class="button__right-arrow-long" width="24" height="11">
+                  <use href="img/sprite.svg#right-arrow-long"></use>
+                </svg>
+                <svg class="button__right-arrow-verylong" width="33" height="11">
+                  <use href="img/sprite.svg#right-arrow-verylong"></use>
+                </svg>
+              </a>
             </div>
           </li>
         </ul>
@@ -120,14 +135,22 @@
           <div class="real-story__wrapper-right">
             <div class="real-story__wrapper-images">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="./img/before-desktop@1x.webp 1x, ./img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/before-tablet@1x.webp 1x, ./img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/before-mobile@1x.png 1x, ./img/before-mobile@2x.png 2x">
+
                 <source media="(min-width: 1300px)" srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
-                <img class="real-story__image--before real-story__image--active" src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" width="320" height="240" alt="До программы Cat Enegry slim">
+                <img class="real-story__image real-story__image--before real-story__image--active" src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" width="320" height="240" alt="До программы Cat Enegry slim">
               </picture>
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="./img/after-desktop@1x.webp 1x, ./img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/after-tablet@1x.webp 1x, ./img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/after-mobile@1x.png 1x, ./img/after-mobile@2x.png 2x">
+
                 <source media="(min-width: 1300px)" srcset="./img/after-desktop@1x.png 1x, ./img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="./img/after-tablet@1x.png 1x, ./img/after-tablet@2x.png 2x">
-                <img class="real-story__image--after" src="./img/after-mobile@1x.png" srcset="./img/after-mobile@2x.png 2x" width="320" height="240" alt="После программы Cat Enegry slim">
+                <img class="real-story__image real-story__image--after" src="./img/after-mobile@1x.png" srcset="./img/after-mobile@2x.png 2x" width="320" height="240" alt="После программы Cat Enegry slim">
               </picture>
             </div>
             <div class="real-story__slider slider">
@@ -161,19 +184,28 @@
         </a>
         <div class="page-footer__wrapper-social">
           <ul class="page-footer__list social-buttons">
-            <li class="social-buttons__item social-buttons__item--vk">
+            <li class="social-buttons__item">
               <a href="#">
-                  <span class="visually-hidden">Наша страница в Контакте</span>
+                <span class="visually-hidden">Наша страница в Контакте</span>
+                <svg class="social-buttons__icon social-buttons__icon--vk" width="22" height="12">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
-            <li class="social-buttons__item social-buttons__item--insta">
+            <li class="social-buttons__item">
               <a href="#">
                   <span class="visually-hidden">Наша страница в Instagram</span>
+                  <svg class="social-buttons__icon social-buttons__icon--insta" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  </svg>
               </a>
             </li>
-            <li class="social-buttons__item social-buttons__item--fb">
+            <li class="social-buttons__item">
               <a href="#">
                   <span class="visually-hidden">Наша страница в Facebook</span>
+                  <svg class="social-buttons__icon social-buttons__icon--fb" width="10" height="19">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg>
               </a>
             </li>
           </ul>
@@ -182,12 +214,16 @@
           <a class="page-footer__copyright-name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-logo">
             <span class="visually-hidden">HTML Academy лого</span>
+            <svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-academy"></use>
+            </svg>
           </a>
         </div>
       </div>
     </footer>
     <script src="./js/scripts.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8d70ab2a-f61a-433f-879e-e6e83f658e41"></script>
     <script src="./js/map.js"></script>
   </body>
 </html>
