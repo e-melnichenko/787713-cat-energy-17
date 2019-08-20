@@ -1,10 +1,10 @@
 .extra-form {
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .extra-form legend {
+  margin-bottom: 35px;
   padding-bottom: 5px;
-  margin-bottom: 10px;
 }
 
 .extra-form__wrapper {
@@ -13,16 +13,12 @@
 
 .extra-form p {
   position: relative;
-  margin: 25px 0;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .extra-form label {
   padding-left: 45px;
-
-  &:hover::before,
-  &:focus::before {
-    border-color: #dfdfdf;
-  }
 
   &:active {
     opacity: 0.3;
@@ -37,7 +33,12 @@
   width: 28px;
   height: 28px;
 
-  border: 1px solid #e5e5e5;
+  border: 1px solid rgba(#cdcdcd, 0.5%);
+}
+
+.extra-form input[type="checkbox"] + label:hover::before,
+.extra-form input[type="checkbox"] + label:focus::before {
+  border-color: #cdcdcd;
 }
 
 .extra-form input[type="checkbox"]:checked + label::after {
@@ -54,11 +55,11 @@
 
 @media (min-width: $tablet-width) {
   .extra-form {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   .extra-form legend {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     padding-bottom: 10px;
   }
 
@@ -72,6 +73,7 @@
 
   .extra-form__wrapper p {
     width: 50%;
+    margin: 26px 0;
   }
 
   .extra-form__wrapper label {
@@ -83,8 +85,6 @@
     left: 30px;
     width: 38px;
     height: 38px;
-
-    border: 1px solid #e5e5e5;
   }
 
   .extra-form input[type="checkbox"]:checked + label::after {
@@ -95,6 +95,10 @@
 @media (min-width: $desktop-width) {
   .extra-form {
     margin-bottom: 45px;
+  }
+
+  .extra-form legend {
+    margin-bottom: 32px;
   }
 
   .extra-form__wrapper {

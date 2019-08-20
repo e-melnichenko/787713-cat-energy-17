@@ -27,13 +27,13 @@
   .page-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 708px;
-    min-height: 106px;
     padding: 0 30px;
   }
 
   .page-header__logo {
+    margin-top: 25px;
+    margin-bottom: 20px;
     padding: 0;
 
     border: none;
@@ -48,13 +48,14 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1220px;
-    min-height: 170px;
     padding: 0 40px;
   }
 
   .page-header__logo img {
     width: 202px;
     height: 59px;
+    margin-top: 30px;
+    margin-bottom: 32px;
   }
 
   .page-header--index {

@@ -1,7 +1,7 @@
 .form {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .form label,
@@ -17,22 +17,32 @@
 .form input[type="text"],
 .form input[type="tel"],
 .form input[type="email"] {
-  min-width: 100px;
+  width: 100px;
+  height: 45px;
   flex-grow: 1;
-  padding: 12px;
+  padding: 15px;
   box-sizing: border-box;
 
   border: 1px solid rgba(#cdcdcd, 0.5%);
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: #cdcdcd;
   }
 
-  &:active {
-    padding-top: 11px;
-    padding-bottom: 11px;
+  &:focus {
+    padding: 14px;
     border: 2px solid #444444;
+  }
+}
+
+.form textarea {
+  height: 150px;
+  padding: 13px;
+
+  overflow: auto;
+
+  &:focus {
+    padding: 12px;
   }
 }
 
@@ -72,7 +82,7 @@
 
 .form__description {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding-left: 20px;
   padding-right: 40px;
 
@@ -87,7 +97,7 @@
 
 .form__button {
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .form small {
@@ -98,36 +108,56 @@
 }
 
 .form input.form__invalid {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding: 11px;
 
   border: 2px solid #ff8282;
+
+  &:hover {
+    border-color: rgba(#ff8282, 0.5%);
+  }
+
+  &:focus {
+    border-color: rgba(#ff8282, 0.2%);
+  }
 }
 
 .form__invalid + .cat-owner__icon {
   fill: #ff8282;
+
+  &:hover {
+    fill: rgba(#ff8282, 0.5%);
+  }
+
+  &:focus {
+    fill: rgba(#ff8282, 0.3%);
+  }
+}
+
+.form__invalid:hover + .cat-owner__icon {
+  fill: rgba(#ff8282, 0.5%);
 }
 
 @media (min-width: $tablet-width) {
   .form {
     width: 768px;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 
   .form__title {
     margin-top: 35px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
     padding: 0 30px;
 
     font-size: 60px;
   }
 
   .form__description {
-    @include oswReg(20px, 30px);
     margin-left: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     padding-left: 30px;
     padding-right: 330px;
+
+    @include oswReg(20px, 30px);
   }
 
   .form label,
@@ -143,8 +173,13 @@
   .form input[type="text"],
   .form input[type="tel"],
   .form input[type="email"] {
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 52px;
+    padding-left: 19px;
+  }
+
+  .form textarea {
+    height: 174px;
+    padding: 15px;
   }
 
   .form__set {
@@ -153,9 +188,9 @@
 
   .form__set legend {
     max-width: none;
-    padding: 0 40px;
     margin-left: 30px;
     margin-right: 30px;
+    padding: 0 40px;
 
     font-size: 36px;
     line-height: 36px;
@@ -195,6 +230,10 @@
     margin-bottom: 80px;
   }
 
+  .form textarea {
+    padding-left: 19px;
+  }
+
   .form__wrapper-head {
     width: 1220px;
     margin: 0 auto;
@@ -204,6 +243,7 @@
   .form__wrapper-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 1220px;
     margin: 0 auto;
     margin-bottom: 50px;

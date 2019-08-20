@@ -4,7 +4,7 @@
 }
 
 .main-info p {
-  margin: 15px 0;
+  margin: 14px 0;
 }
 
 .main-info label {
@@ -13,11 +13,20 @@
 
 @media (min-width: $tablet-width) {
   .main-info {
-    margin-bottom: 55px;
-    padding: 0 70px;
+    margin-bottom: 42px;
+    padding-left: 71px;
+    padding-right: 67px;
+  }
+
+  .main-info p {
+    margin: 20px 0;
   }
 
   .main-info label {
+    margin-right: 15px;
+  }
+
+  .main-info label[for="cat-weight"] {
     margin-right: 20px;
   }
 }
@@ -30,6 +39,6 @@
   }
 
   .main-info label {
-    margin-right: 20px;
+    margin-right: 16px;
   }
 }

@@ -37,8 +37,8 @@
 }
 
 .extra__item {
-  padding-top: 15px;
-  padding-bottom: 18px;
+  padding-top: 14px;
+  padding-bottom: 17px;
 
   border-bottom: 1px solid #cdcdcd;
 }
@@ -73,15 +73,15 @@
 
 .extra__title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   @include oswReg(16px, 16px);
   text-transform: uppercase;
 }
 
 .extra__gift {
-  min-height: 290px;
   position: relative;
+  min-height: 290px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -135,7 +135,7 @@
   }
 
   .extra__list {
-    margin-bottom: 68px;
+    margin-bottom: 72px;
   }
 
   .extra__item:first-of-type {
@@ -146,8 +146,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap;
-    min-height: 138px;
+    min-height: 137px;
     padding: 0 38px;
 
     border: 1px solid #e6e6e6;
@@ -160,7 +161,7 @@
 
   .extra__title {
     margin-top: 25px;
-    margin-bottom: 0;
+    margin-bottom: 25px;
 
     font-size: 20px;
     line-height: 20px;
@@ -215,11 +216,15 @@
 
 @media (min-width: $desktop-width) {
   .extra {
-    margin-bottom: 80px;
+    margin-bottom: 82px;
+  }
+
+  .extra__wrapper-title {
+    margin-bottom: 82px;
   }
 
   .extra__main-title {
-    margin-left: calc((100% - 1300px) / 2);
+    margin-left: calc((100% - 1295px) / 2);
   }
 
   .extra__wrapper {
@@ -236,13 +241,16 @@
   }
 
   .extra__item {
-    align-items: center;
+    justify-content: flex-start;
     min-height: 70px;
     padding: 0;
   }
 
   .extra__title-link {
-    width: 285px;
+    width: 200px;
+    margin-bottom: 0;
+    margin-top: 25px;
+    margin-right: auto;
   }
 
   .extra__title {
@@ -250,16 +258,25 @@
   }
 
   .extra__item table {
-    width: 285px;
-    margin-top: 0;
+    width: 295px;
+    margin-top: 30px;
+    margin-right: 30px;
   }
+
 
   .extra__count {
     text-align: left;
   }
 
+  .extra__price {
+    width: 45px;
+
+    text-align: left;
+  }
+
   .extra__button {
     width: 205px;
+    margin-top: 15px;
   }
 
   .extra__gift {

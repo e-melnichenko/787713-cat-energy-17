@@ -1,13 +1,14 @@
 .comment {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .comment legend {
+  margin-bottom: 30px;
   padding-bottom: 5px;
-  margin-bottom: 15px;
 }
 
 .comment p {
+  margin: 0;
   padding: 0 20px;
 }
 
@@ -17,20 +18,25 @@
 
 @media (min-width: $tablet-width) {
   .comment {
-    margin-bottom: 60px;
+    margin-bottom: 65px;
   }
 
   .comment legend {
-    margin-bottom: 50px;
+    margin-bottom: 65px;
     padding-bottom: 10px;
   }
 
   .comment p {
-    padding: 0 70px;
+    padding-left: 71px;
+    padding-right: 67px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .comment {
+    margin-bottom: 52px;
+  }
+
   .comment legend {
     margin-bottom: 65px;
   }

@@ -27,11 +27,17 @@
   .main-nav--nojs .site-list {
     display: block;
   }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 440px;
+    margin-top: 35px;
+    margin-bottom: 30px;
   }
 
   .main-nav__toggle {
@@ -48,5 +54,7 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 480px;
+    margin-top: 65px;
+    margin-bottom: 60px;
   }
 }

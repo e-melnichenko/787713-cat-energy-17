@@ -1,5 +1,4 @@
 'use strict'
-svg4everybody();
 
 var mainNav = document.querySelector('.main-nav');
 var menuToggle = document.querySelector('.main-nav__toggle');

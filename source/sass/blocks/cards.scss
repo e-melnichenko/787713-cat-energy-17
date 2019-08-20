@@ -6,10 +6,11 @@
 
 .cards__title {
   margin: 0;
-  padding: 18px 20px;
+  padding: 15px 20px;
   padding-bottom: 28px;
 
   @include oswReg(36px, 60px);
+
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -25,7 +26,9 @@
   }
 
   .cards__title {
-    padding: 30px 0;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 28px;
 
     @include oswReg(60px, 60px);
     text-align: left;
@@ -43,7 +46,7 @@
 @media (min-width: $desktop-width) {
   .cards {
     width: 1220px;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
     padding: 0 40px;
   }
 

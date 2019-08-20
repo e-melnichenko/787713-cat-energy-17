@@ -1,6 +1,7 @@
 .purpose {
+  margin-bottom: 12px;
   padding: 0 20px;
-  margin-bottom: 10px;
+  padding-top: 2px;
 }
 
 .purpose p {
@@ -13,7 +14,7 @@
 
   &:hover::before,
   &:focus::before {
-    border-color: #dfdfdf;
+    border-color: #cdcdcd;
   }
 
   &:active {
@@ -29,7 +30,7 @@
   width: 28px;
   height: 28px;
 
-  border: 1px solid #e5e5e5;
+  border: 1px solid rgba(#cdcdcd, 0.5%);
   border-radius: 50%;
 }
 
@@ -47,7 +48,8 @@
 
 @media (min-width: $tablet-width) {
   .purpose {
-    margin: 0 70px;
+    margin-left: 71px;
+    margin-right: 67px;
     margin-bottom: 75px;
     border: 1px solid #e6e6e6;
   }
@@ -78,7 +80,7 @@
 @media (min-width: $desktop-width) {
   .purpose {
     width: 570px;
-    margin: 15px 0;
+    margin: 0;
     padding: 0;
   }
 

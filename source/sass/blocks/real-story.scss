@@ -58,9 +58,9 @@
 .real-story__progress-item p {
   width: 65px;
   display: flex;
-  padding: 0 10px;
   margin: 0 auto;
   margin-top: -10px;
+  padding: 0 10px;
 
   @include arialReg(12px, 12px);
   text-align: center;
@@ -69,13 +69,12 @@
 }
 
 .real-story__expenses {
-  display: flex;
-  justify-content: center;
-}
+  margin-top: 20px;
+  margin-bottom: 32px;
 
-.real-story__expenses p {
   @include oswReg(14px, 20px);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .real-story__image {
@@ -87,26 +86,12 @@
 }
 
 .real-story__wrapper-images {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: $tablet-width) {
   .real-story {
-    position: relative;
-
-    background-color: transparent;
-  }
-
-  .real-story::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 462px;
-    z-index: -1;
-
-    background-color: #eaeaea;
+    background: linear-gradient(to top, #f2f2f2 465px, #ffffff 465px);
   }
 
   .real-story__wrapper {
@@ -132,7 +117,7 @@
   .real-story__wrapper-progress {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 85px;
+    margin-bottom: 80px;
     padding: 0 30px;
   }
 
@@ -156,8 +141,8 @@
 
   .real-story__progress-item p {
     width: auto;
-    padding: 0 5px;
     margin-top: -8px;
+    padding: 0 5px;
 
     font-size: 14px;
     line-height: 14px;
@@ -166,16 +151,14 @@
   }
 
   .real-story__expenses {
-    display: block;
-    padding-top: 15px;
-  }
-
-  .real-story__expenses p {
+    width: 180px;
     margin: 0;
+    margin-top: 8px;
     margin-bottom: 10px;
 
+    text-align: right;
     font-size: 20px;
-    text-align-last: right;
+    line-height: 30px;
   }
 
   .real-story__wrapper-images {
@@ -190,6 +173,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .real-story {
+    background: linear-gradient(#ffffff 190px, #f2f2f2 190px);
+  }
+
   .real-story__wrapper {
     display: flex;
     justify-content: space-between;
@@ -215,22 +202,26 @@
 
   .real-story__wrapper-progress {
     display: block;
-    margin-bottom: 65px;
+    margin-bottom: 70px;
     padding: 0;
   }
 
   .real-story__progress-list {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .real-story__progress-item p {
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
   }
 
   .real-story__expenses {
-    display: flex;
-    justify-content: space-between;
-    width: 330px;
+    text-align: left;
+    width: 435px;
+    margin-top: 0;
+  }
+
+  .real-story__expenses span {
+    margin-left: 60px;
   }
 
   .real-story__wrapper-right {
@@ -238,6 +229,6 @@
   }
 
   .real-story__wrapper-images {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }

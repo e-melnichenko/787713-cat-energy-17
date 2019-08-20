@@ -19,7 +19,6 @@
     position: absolute;
     left: 0;
     top: 0;
-
     width: 50px;
     height: 50px;
     margin-left: 22px;
@@ -34,7 +33,6 @@
     position: absolute;
     left: 0;
     top: 0;
-
     width: 35px;
     height: 49px;
     margin-left: 30px;
@@ -48,7 +46,6 @@
     position: absolute;
     left: 0;
     top: 0;
-
     width: 67px;
     height: 28px;
     margin-left: 13px;
@@ -64,8 +61,8 @@
 
 .catalog__title {
   margin: 0;
-  padding: 0;
   margin-bottom: 30px;
+  padding: 0;
   padding-left: 72px;
 
   @include oswReg(24px, 37px);
@@ -77,10 +74,6 @@
   margin-bottom: 22px;
 
   @include arialReg;
-}
-
-.catalog__description br {
-  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -134,8 +127,8 @@
     line-height: 24px;
   }
 
-  .catalog__description br {
-    display: inline;
+  .catalog__item--pro .catalog__description {
+    padding-right: 32px;
   }
 
   .catalog__button {
@@ -198,7 +191,7 @@
     margin-bottom: 15px;
   }
 
-  .catalog__description br {
-    display: none;
+  .catalog__item--pro .catalog__description {
+    padding-right: 0;
   }
 }

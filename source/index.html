@@ -8,7 +8,6 @@
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
     <script src="./js/picturefill.js" async></script>
-
   </head>
   <body>
     <header class="page-header page-header--index">
@@ -25,7 +24,7 @@
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item  site-list__item--active">
-            <a >Главная</a>
+            <a>Главная</a>
           </li>
           <li class="site-list__item">
             <a href="./catalog.html">Каталог продукции</a>
@@ -80,7 +79,7 @@
           <li class="catalog__item catalog__item--pro">
             <div class="catalog__wrapper">
               <h3 class="catalog__title catalog__title--pro">Набор массы</h3>
-              <p class="catalog__description">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br>мышцы!</p>
+              <p class="catalog__description">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a href="./catalog.html" class="catalog__button button button--catalog">
                 Каталог pro
                 <svg class="button__right-arrow-long" width="24" height="11">
@@ -133,10 +132,10 @@
                   </div>
                 </li>
               </ul>
-              <div class="real-story__expenses">
-                <p>Затраты на питание:</p>
-                <p>15 000 руб.</p>
-              </div>
+              <p class="real-story__expenses">
+                Затраты на питание:
+                <span>15 000 руб.</span>
+              </p>
             </div>
           </div>
           <div class="real-story__wrapper-right">
@@ -161,11 +160,11 @@
               </picture>
             </div>
             <div class="real-story__slider slider">
-              <button class="slider__control slider__button-before">Было</button>
+              <button class="slider__control slider__control--before">Было<span class="visually-hidden">показать картинку до программы</span></button>
                 <div class="slider__scale">
                   <button class="slider__toggle slider__toggle--left"></button>
                 </div>
-              <button class="slider__control slider__button-after">Стало</button>
+              <button class="slider__control slider__control--after">Стало<span class="visually-hidden">показать картинку после программы</span></button>
             </div>
           </div>
         </div>
@@ -219,18 +218,16 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__wrapper-bottom">
-          <a class="page-footer__copyright-name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-logo">
-            <span class="visually-hidden">HTML Academy лого</span>
-            <svg width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-academy"></use>
-            </svg>
-          </a>
-        </div>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright">
+          <span>HTML Academy</span>
+          <svg width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-academy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
     <script src="./js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
     <script src="./js/scripts.js"></script>
     <script src="./js/slider.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8d70ab2a-f61a-433f-879e-e6e83f658e41"></script>

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 130px;
+  width: 140px;
   margin: 0 auto;
 }
 
@@ -31,8 +31,6 @@
 @media (min-width: $tablet-width) {
   .social-buttons {
     width: 135px;
-    padding-bottom: 10px;
-    padding-left: 10px;
   }
 
   .social-buttons__icon--vk {
@@ -43,6 +41,7 @@
   .social-buttons__icon--insta {
     width: 23px;
     height: 23px;
+    margin-right: 0;
   }
 
   .social-buttons__icon--fb {

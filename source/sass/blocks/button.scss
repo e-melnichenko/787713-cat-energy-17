@@ -1,6 +1,5 @@
 .button {
   position: relative;
-
   display: inline-block;
   width: calc(100% - 20px * 2);
   padding: 10px 20px;
@@ -104,6 +103,7 @@
   .button--catalog {
     font-size: 20px;
     line-height: 20px;
+
     border: none;
   }
 

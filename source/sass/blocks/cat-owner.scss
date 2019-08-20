@@ -1,15 +1,16 @@
 .cat-owner {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .cat-owner legend {
+  margin-bottom: 35px;
   padding-top: 15px;
-  margin-bottom: 20px;
 }
 
 .cat-owner p {
   position: relative;
-  margin: 15px 0;
+  margin: 0;
+  margin-bottom: 15px;
   padding: 0 20px;
 }
 
@@ -22,13 +23,22 @@
   left: 265px;
 }
 
-.cat-owner input:active + .cat-owner__icon {
+.cat-owner input:focus + .cat-owner__icon {
   fill: $green;
+}
+
+.cat-owner input.form__invalid:focus + .cat-owner__icon {
+  fill: rgba(#ff8282, 0.3%);
 }
 
 @media (min-width: $tablet-width) {
   .cat-owner {
     margin-bottom: 50px;
+  }
+
+  .cat-owner__wrapper {
+    margin-bottom: 18px;
+    padding-top: 18px;
   }
 
   .cat-owner legend {
@@ -38,11 +48,18 @@
   }
 
   .cat-owner p {
-    padding: 0 70px;
+    margin: 0;
+    margin-bottom: 18px;
+    padding-left: 71px;
+    padding-right: 67px;
   }
 
   .cat-owner label {
     margin-right: 20px;
+  }
+
+  .cat-owner label[for="phone"] {
+    margin-right: 15px;
   }
 
   .cat-owner__icon {
@@ -59,12 +76,18 @@
     padding: 0 40px;
   }
 
+  .cat-owner legend {
+    margin-bottom: 45px;
+  }
+
   .cat-owner p {
     width: 570px;
     padding: 0;
+    margin: 18px 0;
   }
 
   .cat-owner__icon {
-    left: 535px;
+    left: auto;
+    right: 20px;
   }
 }

@@ -35,6 +35,10 @@
   border-collapse: collapse;
 }
 
+.card__description td {
+  padding: 0;
+}
+
 .card__prop {
   width: 50%;
 }
@@ -81,23 +85,25 @@
 
 .card__link-more p {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   @include arialReg(12px, 16px);
 }
 
 .card__show-all {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .card {
     display: block;
     width: 324px;
+    min-height: 430px;
     margin-top: 140px;
     padding: 0;
 
     background-color: #f2f2f2;
+    border: none;
   }
 
   .card--show-more {
@@ -112,8 +118,8 @@
     position: relative;
     display: block;
     min-height: 208px;
-    margin-top: -80px;
-    margin-bottom: 35px;
+    margin-top: -82px;
+    margin-bottom: 37px;
   }
 
   .card__link-picture img {
@@ -124,13 +130,13 @@
   }
 
   .card__wrapper-text {
-    width: 244px;
-    padding: 0 40px;
+    width: 249px;
+    padding: 0 38px;
   }
 
   .card__title {
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     padding: 0 50px;
 
     font-size: 20px;
@@ -138,22 +144,22 @@
   }
 
   .card__description {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
     font-size: 16px;
   }
 
   .card__description td {
-    padding: 8px 0;
+    padding-top: 7px;
+    padding-bottom: 8px;
 
     border-bottom: 1px solid #cdcdcd;
   }
 
   .card__button-order {
-    width: 204px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    width: 209px;
+    margin-left: 38px;
+    margin-right: 38px;
   }
 
   .card__link-more {
@@ -188,11 +194,13 @@
 @media (min-width: $desktop-width) {
   .card {
     width: 245px;
-    margin-top: 145px;
+    min-height: 431px;
+    margin-top: 142px;
   }
 
   .card__link-picture {
-    margin-bottom: 20px;
+    margin-top: -80px;
+    margin-bottom: 25px;
   }
 
   .card__wrapper-text {
@@ -217,14 +225,18 @@
   }
 
   .card__link-more::before {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   .card__link-more b {
     padding: 0 10px;
+    margin-bottom: 25px;
   }
 
   .card__link-more p {
+    margin-bottom: 82px;
     padding: 0;
+
+    line-height: 20px;
   }
 }

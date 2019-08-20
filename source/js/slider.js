@@ -1,5 +1,5 @@
-var buttonBefore = document.querySelector('.slider__button-before');
-var buttonAfter = document.querySelector('.slider__button-after');
+var buttonBefore = document.querySelector('.slider__control--before');
+var buttonAfter = document.querySelector('.slider__control--after');
 var imageBefore = document.querySelector('.real-story__image--before');
 var imageAfter = document.querySelector('.real-story__image--after');
 var imageToggle = document.querySelector('.slider__toggle');
